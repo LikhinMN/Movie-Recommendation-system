@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings - MAZE</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html">MAZE</a>
+                </div>
+                <div class="nav-links">
+                    <a href="discover.html" class="nav-link">Discover</a>
+                    <a href="categories.html" class="nav-link">Categories</a>
+                    <a href="top-rated.html" class="nav-link">Top Rated</a>
+                    <a href="watchlist.html" class="nav-link">Watchlist</a>
+                    <div class="nav-buttons">
+                        <button class="user-btn active">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Account <span class="highlight">Settings</span></h1>
+                <p>Manage your profile and preferences</p>
+            </div>
+        </section>
+
+        <section class="settings-section">
+            <div class="container">
+                <div class="settings-container">
+                    <div class="settings-sidebar">
+                        <div class="user-profile">
+                            <div class="user-avatar">
+                                <img src="/placeholder.svg?height=100&width=100&text=JD" alt="User avatar">
+                                <button class="edit-avatar-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pencil"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg>
+                                </button>
+                            </div>
+                            <div class="user-info">
+                                <h3>John Doe</h3>
+                                <p>john.doe@example.com</p>
+                            </div>
+                        </div>
+                        
+                        <nav class="settings-nav">
+                            <a href="#" class="settings-nav-item active">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                Profile
+                            </a>
+                            <a href="#" class="settings-nav-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                                Security
+                            </a>
+                            <a href="#" class="settings-nav-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bell"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+                                Notifications
+                            </a>
+                            <a href="#" class="settings-nav-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+                                Appearance
+                            </a>
+                            <a href="#" class="settings-nav-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-credit-card"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+                                Billing
+                            </a>
+                            <a href="#" class="settings-nav-item danger">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" x2="9" y1="12" y2="12"/></svg>
+                                Sign Out
+                            </a>
+                        </nav>
+                    </div>
+                    
+                    <div class="settings-content">
+                        <div class="settings-panel active" id="profile-panel">
+                            <h2>Profile Information</h2>
+                            <p>Update your personal information and how it appears on your profile</p>
+                            
+                            <form class="settings-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="first-name">First Name</label>
+                                        <input type="text" id="first-name" value="John" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="last-name">Last Name</label>
+                                        <input type="text" id="last-name" value="Doe" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="username">Username</label>
+                                    <input type="text" id="username" value="johndoe" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" value="john.doe@example.com" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="bio">Bio</label>
+                                    <textarea id="bio" rows="4" placeholder="Tell us about yourself">Movie enthusiast with a passion for sci-fi and thrillers. Always looking for the next great film to add to my collection.</textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>Favorite Genres</label>
+                                    <div class="checkbox-group">
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="genre-action" checked>
+                                            <label for="genre-action">Action</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="genre-comedy">
+                                            <label for="genre-comedy">Comedy</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="genre-drama">
+                                            <label for="genre-drama">Drama</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="genre-horror">
+                                            <label for="genre-horror">Horror</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="genre-sci-fi" checked>
+                                            <label for="genre-sci-fi">Sci-Fi</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="genre-thriller" checked>
+                                            <label for="genre-thriller">Thriller</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-actions">
+                                    <button type="submit" class="btn-primary">Save Changes</button>
+                                    <button type="reset" class="btn-secondary">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span>MAZE</span>
+                    <p>Your Gateway to Movie Magic</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <a href="index.html">Home</a>
+                        <a href="discover.html">Discover</a>
+                        <a href="categories.html">Categories</a>
+                        <a href="top-rated.html">Top Rated</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Account</h4>
+                        <a href="signin.html">Sign In</a>
+                        <a href="register.html">Register</a>
+                        <a href="watchlist.html">Watchlist</a>
+                        <a href="settings.html">Settings</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 MAZE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

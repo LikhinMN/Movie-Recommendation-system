@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interstellar Journey - MAZE</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html">MAZE</a>
+                </div>
+                <div class="nav-links">
+                    <a href="discover.html" class="nav-link">Discover</a>
+                    <a href="categories.html" class="nav-link">Categories</a>
+                    <a href="top-rated.html" class="nav-link">Top Rated</a>
+                    <a href="watchlist.html" class="nav-link">Watchlist</a>
+                    <div class="nav-buttons">
+                        <a href="signin.html" class="btn-secondary btn-small">Sign In</a>
+                        <button class="user-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="movie-hero" style="background-image: linear-gradient(to right, rgba(15, 20, 25, 0.9) 40%, rgba(15, 20, 25, 0.6)), url('/placeholder.svg?height=600&width=1200&text=Movie+Banner')">
+            <div class="container">
+                <div class="movie-hero-content">
+                    <div class="movie-poster-large">
+                        <img src="/placeholder.svg?height=450&width=300&text=Movie+Poster" alt="Interstellar Journey movie poster">
+                    </div>
+                    <div class="movie-details">
+                        <h1>Interstellar Journey</h1>
+                        <div class="movie-meta-large">
+                            <span>2025</span>
+                            <span>Sci-Fi, Adventure, Drama</span>
+                            <span>2h 45m</span>
+                            <span class="age-rating">PG-13</span>
+                        </div>
+                        <div class="movie-rating-large">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <span>8.7</span>
+                            <span class="vote-count">(87,432 votes)</span>
+                        </div>
+                        <p class="movie-tagline">
+                            The future of humanity is at stake.
+                        </p>
+                        <div class="movie-actions-row">
+                            <button class="btn-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                                Watch Trailer
+                            </button>
+                            <button class="btn-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                                Add to Watchlist
+                            </button>
+                            <button class="btn-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-share-2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="movie-content">
+            <div class="container">
+                <div class="movie-tabs">
+                    <button class="movie-tab active">Overview</button>
+                    <button class="movie-tab">Cast & Crew</button>
+                    <button class="movie-tab">Reviews</button>
+                    <button class="movie-tab">Media</button>
+                </div>
+                
+                <div class="movie-tab-content">
+                    <div class="movie-overview">
+                        <div class="movie-synopsis">
+                            <h2>Synopsis</h2>
+                            <p>
+                                In a future where Earth is becoming uninhabitable, a team of astronauts embarks on a perilous journey through a newly discovered wormhole near Saturn. Their mission: to find a new habitable planet for humanity. As they venture into the unknown depths of space, they face unimaginable challenges that test the limits of human endurance and scientific understanding.
+                            </p>
+                            <p>
+                                Led by former NASA pilot Cooper (David Mitchell) and brilliant physicist Dr. Brand (Emma Richardson), the team must navigate not only the physical dangers of space travel but also the mind-bending implications of relativity, where time passes differently across different worlds. What begins as a mission to save humanity becomes a profound exploration of love, sacrifice, and the bonds that transcend space and time.
+                            </p>
+                        </div>
+                        
+                        <div class="movie-details-grid">
+                            <div class="movie-detail-item">
+                                <h3>Director</h3>
+                                <p>Christopher Johnson</p>
+                            </div>
+                            <div class="movie-detail-item">
+                                <h3>Writers</h3>
+                                <p>Jonathan Johnson, Christopher Johnson</p>
+                            </div>
+                            <div class="movie-detail-item">
+                                <h3>Stars</h3>
+                                <p>David Mitchell, Emma Richardson, Michael Chen</p>
+                            </div>
+                            <div class="movie-detail-item">
+                                <h3>Release Date</h3>
+                                <p>March 15, 2025</p>
+                            </div>
+                            <div class="movie-detail-item">
+                                <h3>Budget</h3>
+                                <p>$185 million</p>
+                            </div>
+                            <div class="movie-detail-item">
+                                <h3>Box Office</h3>
+                                <p>$678 million</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="similar-movies">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Similar Movies</h2>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+                <div class="movie-grid">
+                    <!-- 4 Similar Movie Cards -->
+                    <div class="movie-card">
+                        <div class="movie-poster">
+                            <img src="/placeholder.svg?height=450&width=300&text=Similar+1" alt="Movie poster">
+                            <div class="movie-rating">8.5</div>
+                            <div class="movie-actions">
+                                <button class="action-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                                </button>
+                                <button class="action-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-info"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="movie-info">
+                            <h3><a href="movie-details.html">Gravity's Edge</a></h3>
+                            <div class="movie-meta">
+                                <span>2024</span>
+                                <span>Sci-Fi</span>
+                                <span>2h 12m</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- More similar movies would go here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span>MAZE</span>
+                    <p>Your Gateway to Movie Magic</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <a href="index.html">Home</a>
+                        <a href="discover.html">Discover</a>
+                        <a href="categories.html">Categories</a>
+                        <a href="top-rated.html">Top Rated</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Account</h4>
+                        <a href="signin.html">Sign In</a>
+                        <a href="register.html">Register</a>
+                        <a href="watchlist.html">Watchlist</a>
+                        <a href="settings.html">Settings</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="language-selector">
+                <select>
+                    <option selected>English (United States)</option>
+                    <option>English (India)</option>
+                    <option>Español</option>
+                    <option>Français</option>
+                    <option>Deutsch</option>
+                </select>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 MAZE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,62 +1,73 @@
-import { genres } from "../data/movie.js";
-const apiURL = `http://www.omdbapi.com/?apikey=5446693`;
-const Moviegrid = document.querySelector("#main");
-let MOvie=[]
+import { genres,category } from "../data/movie.js";
+const Moviegrid = document.querySelector("#main-movie");
+const categoryGrid=document.querySelector('.category-buttons-container')
+
+const baseURL = 'https://api.themoviedb.org/3';
+async function fetchActionMovies() {
+  const url = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=28&sort_by=release_date.desc`;
+  const response = await fetch(url);
+  const data = await response.json();
+  console.log(data);
+}
+fetchActionMovies();
+function generatecategory(){
+  let categoryHtml='';
+  category.forEach((c)=>{
+    categoryHtml+=
+    `
+      <button class="category-button" data-id="${c}">${c}</button>
+    `
+  })
+  categoryGrid.innerHTML=categoryHtml;
+}
+generatecategory();
 function generategrid() {
   let generategridHTML = "";
   genres.forEach((g) => {
-    generategridHTML += 
-    `
+    generategridHTML += `
     <section id="card">
-        <div class="section-title"><h2>${g.genre}</h2></div>
-        <div class="section-card-container" data-id="${g.genre}">
+        <div class="section-title"><h2>${g.name}</h2></div>
+        <div class="section-card-container" data-id="${g.id}">
         </div>
-   </section>
-   `;
+    </section>
+    `;
   });
   Moviegrid.innerHTML = generategridHTML;
 }
 generategrid();
-const sectionContainer=document.querySelectorAll('.section-card-container')
-async function genrateSections(){
-   let matchingItem;
-   sectionContainer.forEach((section)=>{
-      genres.forEach((g)=>{
-         if(g.genre===section.dataset.id){
-           matchingItem=g.movies
-         }
-      })
-      if(matchingItem){
-         console.log(matchingItem)
-      }
+
+const sectionContainer = document.querySelectorAll(".section-card-container");
+
+async function GenerateSections(){
+  sectionContainer.forEach(async(section) => {
+    const sectionID=Number(section.dataset.id)
+    let matchingId;
+    genres.forEach((g)=>{
+       if(g.id===sectionID){
+        matchingId=g.id
+       }
     })
+    const movie=[];
+  })
 }
-MOvie=genrateSections();
-console.log(MOvie)
-async function fetchMovie(movie) {
-  try {
-    const reponse = await fetch(`${apiURL}` + `&i=${movie}`);
-    const data = await reponse.json();
-    return data;
-  } catch (error) {
-    console.error("Error:", error);
-  }
-}
-let actionMoviesHTML = "";
-function generateMovie() {
-  actions.forEach((movie) => {
-    actionMoviesHTML += `
-          <div class="section-card">
+GenerateSections();
+function generateMovie(movies, section) {
+  let sectionMoviesHTML = ""; 
+  movies.forEach((movie) => {
+    sectionMoviesHTML += `
+          <div class="section-card"${movie.imdbID}>
             <div class="section-image-container">
-              <img src=${movie.Poster} />
+              <img src="${movie.Poster}" alt="${movie.Title}" />
             </div>
             <div class="section-card-description">
               <p class="section-card-description-title">${movie.Title}</p>
               <p class="section-card-description-year-of-release">${movie.Year}</p>
-              <p class="section-card-description-imdb-rating">imdb : ${movie.imdbRating}</p>
+              <p class="section-card-description-imdb-rating">IMDB: ${movie.imdbRating || "N/A"}</p>
             </div>
           </div>
       `;
   });
-  ActionContainer.innerHTML = actionMoviesHTML;
+  section.innerHTML = sectionMoviesHTML; 
 }
+
+

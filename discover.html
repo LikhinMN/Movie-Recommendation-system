@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Movies - MAZE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html">MAZE</a>
+                </div>
+                <div class="nav-links">
+                    <a href="discover.html" class="nav-link active">Discover</a>
+                    <a href="categories.html" class="nav-link">Categories</a>
+                    <a href="top-rated.html" class="nav-link">Top Rated</a>
+                    <a href="watchlist.html" class="nav-link">Watchlist</a>
+                    <div class="nav-buttons">
+                        <a href="signin.html" class="btn-secondary btn-small">Sign In</a>
+                        <button class="user-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Discover <span class="highlight">Movies</span></h1>
+                <p>Explore our vast collection of movies and find your next favorite</p>
+            </div>
+        </section>
+
+        <section class="filters">
+            <div class="container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for movies...">
+                    <button class="search-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    </button>
+                </div>
+                <div class="filter-options">
+                    <div class="filter-group">
+                        <label>Genre</label>
+                        <select>
+                            <option value="">All Genres</option>
+                            <option value="action">Action</option>
+                            <option value="comedy">Comedy</option>
+                            <option value="drama">Drama</option>
+                            <option value="horror">Horror</option>
+                            <option value="sci-fi">Sci-Fi</option>
+                            <option value="thriller">Thriller</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Year</label>
+                        <select>
+                            <option value="">All Years</option>
+                            <option value="2025">2025</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="older">2020 & Older</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Rating</label>
+                        <select>
+                            <option value="">All Ratings</option>
+                            <option value="9">9+ Stars</option>
+                            <option value="8">8+ Stars</option>
+                            <option value="7">7+ Stars</option>
+                            <option value="6">6+ Stars</option>
+                            <option value="5">5+ Stars</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Sort By</label>
+                        <select>
+                            <option value="popularity">Popularity</option>
+                            <option value="rating">Rating</option>
+                            <option value="release">Release Date</option>
+                            <option value="title">Title</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="movie-results">
+            <div class="container">
+                <div class="results-header">
+                    <h2>All Movies</h2>
+                    <div class="results-count">Showing 12 of 1,245 movies</div>
+                </div>
+                <div class="movie-grid large-grid">
+                    <!-- Movie Cards (12 total) -->
+                    <div class="movie-card">
+                        <div class="movie-poster">
+                            <img src="/placeholder.svg?height=450&width=300&text=Movie+1" alt="Movie poster">
+                            <div class="movie-rating">8.7</div>
+                            <div class="movie-actions">
+                                <button class="action-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                                </button>
+                                <button class="action-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-info"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="movie-info">
+                            <h3><a href="movie-details.html">Interstellar Journey</a></h3>
+                            <div class="movie-meta">
+                                <span>2025</span>
+                                <span>Sci-Fi</span>
+                                <span>2h 45m</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat movie card structure for 11 more cards -->
+                    <!-- For brevity, I'm not including all 12 cards in this example -->
+                    <div class="movie-card">
+                        <div class="movie-poster">
+                            <img src="/placeholder.svg?height=450&width=300&text=Movie+2" alt="Movie poster">
+                            <div class="movie-rating">9.2</div>
+                            <div class="movie-actions">
+                                <button class="action-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                                </button>
+                                <button class="action-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-info"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="movie-info">
+                            <h3><a href="movie-details.html">Eternal Shadows</a></h3>
+                            <div class="movie-meta">
+                                <span>2025</span>
+                                <span>Thriller</span>
+                                <span>2h 10m</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <button class="pagination-btn disabled">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
+                    </button>
+                    <button class="pagination-btn active">1</button>
+                    <button class="pagination-btn">2</button>
+                    <button class="pagination-btn">3</button>
+                    <span class="pagination-ellipsis">...</span>
+                    <button class="pagination-btn">104</button>
+                    <button class="pagination-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span>MAZE</span>
+                    <p>Your Gateway to Movie Magic</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <a href="index.html">Home</a>
+                        <a href="discover.html">Discover</a>
+                        <a href="categories.html">Categories</a>
+                        <a href="top-rated.html">Top Rated</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Account</h4>
+                        <a href="signin.html">Sign In</a>
+                        <a href="register.html">Register</a>
+                        <a href="watchlist.html">Watchlist</a>
+                        <a href="settings.html">Settings</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="language-selector">
+                <select>
+                    <option selected>English (United States)</option>
+                    <option>English (India)</option>
+                    <option>Español</option>
+                    <option>Français</option>
+                    <option>Deutsch</option>
+                </select>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 MAZE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
